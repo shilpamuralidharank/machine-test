@@ -1,0 +1,15 @@
+<div class="container-fluid m-0 p-0">
+  <div class="home-main-div">
+    <app-home-page-top-section></app-home-page-top-section>
+    <img src="assets/images/cut.png" alt="" class="img-fluid" />
+    <div id="key-features" class="bottom-section-wrapper">
+      <h4>
+        <span>Key Features</span>
+      </h4>
+      <app-home-page-key-section></app-home-page-key-section>
+    </div>
+  </div>
+</div>
+<span class="sc-top-button" *ngIf="isShow" (click)="gotoTop()">
+  <span><img src="assets/images/white-arrow.svg" alt=""></span>
+</span>

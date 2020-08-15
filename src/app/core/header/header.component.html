@@ -1,0 +1,33 @@
+<div class="container-fluid m-0 p-0">
+  <nav class="top-nav-bar d-flex justify-space-between align-items-center">
+    <div class="logo mr-auto" (click)="logoClick()">
+      <img src="assets/images/Logo_white.png" alt="" height="26px" />
+    </div>
+    <div class="each-menu">
+      <span>
+        <a href="#key-features">
+          <span class="item-menu">Key Features</span>
+        </a>
+      </span>
+    </div>
+    <div class="each-menu">
+      <span>
+        <a>
+          <span class="item-menu">Contact</span>
+        </a>
+      </span>
+    </div>
+    <div class="logout">
+      <span *ngIf="!isLoggedIn" (click)="login()">
+        <a>
+          Login
+        </a>
+      </span>
+      <span *ngIf="isLoggedIn" (click)="logOut()">
+        <a>
+          Logout
+        </a>
+      </span>
+    </div>
+  </nav>
+</div>

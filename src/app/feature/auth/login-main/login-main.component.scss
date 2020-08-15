@@ -1,0 +1,9 @@
+@import "../../../../variable.scss";
+
+.login-main-div {
+  .img-fluid {
+    height: 100px;
+    background-image: linear-gradient(to right, $dbblue, $startblue);
+    width: 100%;
+  }
+}

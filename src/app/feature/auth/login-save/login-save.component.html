@@ -1,0 +1,7 @@
+<div [ngClass]="{'notValid': !isButtonEnable }">
+    <div class="mb-2">
+      <button class="login-button" [disabled]="!isButtonEnable" (click)="loginTrigger()">SIGN IN</button>
+    </div>
+    <div *ngIf="showError" class="error">*Invalid credentials!</div>
+  </div>
+  

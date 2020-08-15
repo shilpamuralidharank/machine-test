@@ -1,0 +1,17 @@
+<div class="input-field-wrapper">
+    <div class="col-md-12 input-style">
+      <div>
+        <input class="txt-style w-100" size="40" type="email" placeholder="Email" [(ngModel)]="inputFields.primaryEmail" #firstEmail="ngModel"
+          (ngModelChange)="emailChange($event)" autocomplete="off">
+        <span *ngIf="firstEmail.touched && !validEmail" class="error">*Please enter valid email!</span>
+      </div>
+    </div>
+    <div class="col-md-12 input-style">
+      <div>
+        <input class="txt-style w-100" size="40" type="password" placeholder="Password" [(ngModel)]="inputFields.password" #passWord="ngModel"
+          (ngModelChange)="passwordChange($event)" autocomplete="off">
+        <span *ngIf="passWord.touched && !validPassword" class="error">*Please enter valid password!</span>
+      </div>
+    </div>
+  </div>
+  

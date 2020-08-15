@@ -1,0 +1,35 @@
+@import "../../../../variable.scss";
+
+.input-field-wrapper {
+  height: 180px;
+
+  .input-style {
+    height: 90px;
+
+    .txt-style {
+      background: $hash;
+      height: 38px;
+      border: none;
+      font-family: OpenSans-SemiBold;
+      padding: 0 20px;
+      color: $startblack;
+      font-size: 12px;
+
+      &:hover {
+        cursor: pointer;
+        border-bottom: 2px solid $dbblue;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2), 0 5px 6px 0 rgba(0, 0, 0, .19);
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .error {
+      color: $red;
+      font-size: 9px;
+      font-family: OpenSans-Regular;
+    }
+  }
+}

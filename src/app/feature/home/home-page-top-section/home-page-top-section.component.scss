@@ -1,0 +1,32 @@
+@import "../../../../variable.scss";
+
+.home-top-section {
+  height: 500px;
+  // background-color: $dbblue;
+  background-image: linear-gradient(to right, $dbblue, $startblue);
+  color: $white;
+  padding: 100px 100px 0px 100px;
+
+  h1 {
+    font-family: 'OpenSans-SemiBold';
+  }
+
+  .top-description {
+    font-family: OpenSans-Regular;
+    font-size: 12px;
+  }
+
+  .home-btn {
+    background-color: $statorange;
+    color: $white;
+    padding: 4px 30px;
+    font-size: 12px;
+    border-radius: 20px;
+    border: 1px solid $statorange;
+    font-family: 'OpenSans-Bold';
+
+    &:hover {
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2), 0 5px 6px 0 rgba(0, 0, 0, .19);
+    }
+  }
+}

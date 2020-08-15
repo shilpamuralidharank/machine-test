@@ -1,0 +1,28 @@
+<div class="login-top-section">
+  <div class="d-flex justify-content-between align-items-center">
+    <div>
+      <h1>Welcome to <br>dbies</h1>
+      <div class="mt-4">
+        <img src="assets/images/secure_ your_it.png" alt="" height="300px" />
+      </div>
+      <br>
+    </div>
+    <div class="login-wrapper">
+      <div class="p-4">
+        <div class="d-flex justify-centent-center align-items-center mb-4">
+          <div class="w-100 text-center mb-4">
+            <img src="assets/images/logo.png" alt="" class="logo" />
+          </div>
+        </div>
+        <div class="mt-4">
+          <div>
+            <app-login-field [inputFields]="fields"></app-login-field>
+            <div class="col-md-12 mb-3">
+                <app-login-save (loginEvent)="login($event)"></app-login-save>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

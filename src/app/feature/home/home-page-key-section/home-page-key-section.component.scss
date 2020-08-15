@@ -1,0 +1,82 @@
+@import "../../../../variable.scss";
+
+.key-section-wrapper {
+  height: 250px;
+  font-family: OpenSans-Regular;
+  cursor: pointer;
+  text-align: center;
+
+  &:hover {
+    border-radius: 9px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2), 0 5px 6px 0 rgba(0, 0, 0, .19);
+
+    .image-wrapper {
+      text-align: center;
+
+      .image-background {
+        background-color: $startblue;
+        height: 60px;
+        width: 60px;
+        display: inline-block;
+        border-radius: 50%;
+
+        .image-feat-one {
+          background-image: url("../../../../assets/images/technical\ security_hover.png");
+          height: 50px;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        .image-feat-two {
+          background-image: url("../../../../assets/images/data\ security_hover.png");
+          height: 50px;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        .image-feat-three {
+          background-image: url("../../../../assets/images/identity\ theft_hover.png");
+          height: 50px;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+
+  .image-wrapper {
+    text-align: center;
+
+    .image-background {
+      background-color: $hash;
+      height: 60px;
+      width: 60px;
+      display: inline-block;
+      border-radius: 50%;
+
+      .image-feat-one {
+        background-image: url("../../../../assets/images/technical-security.png");
+        height: 50px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .image-feat-two {
+        background-image: url("../../../../assets/images/data\ security.png");
+        height: 50px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .image-feat-three {
+        background-image: url("../../../../assets/images/identity\ theft.png");
+        height: 50px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+  .description {
+      font-size: 12px;
+  }
+}

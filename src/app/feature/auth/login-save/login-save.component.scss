@@ -1,0 +1,35 @@
+@import "../../../../variable.scss";
+
+.login-button {
+  width: 100%;
+  background: $statorange;
+  padding: 7px 0;
+  font-family: OpenSans-SemiBold;
+  border-radius: 10px;
+  color: $white;
+  overflow: hidden;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+    border-bottom: 2px solid $dbblue;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2), 0 5px 6px 0 rgba(0, 0, 0, .19);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.notValid {
+  button {
+    cursor: not-allowed;
+  }
+}
+
+.error {
+  color: $red;
+  font-size: 10px;
+  font-family: OpenSans-Regular;
+  text-align: center;
+}

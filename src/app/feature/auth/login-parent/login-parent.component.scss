@@ -1,0 +1,23 @@
+@import "../../../../variable.scss";
+
+.login-top-section {
+  height: 500px;
+  background-image: linear-gradient(to right, $dbblue, $startblue);
+  color: $white;
+  padding: 50px 100px 0px 100px;
+
+  h1 {
+    font-family: 'OpenSans-SemiBold';
+  }
+
+  .login-wrapper {
+    width: 400px;
+    height: 400px;
+    background: $white;
+    border-radius: 12px;
+
+    .logo {
+      height: 65px;
+    }
+  }
+}
